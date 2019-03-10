@@ -1,0 +1,25 @@
+{
+  "name": "iago",
+  "version": "1.0.0",
+  "description": "bird finder",
+  "main": "app.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha ./test/test.js --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Samuyi/iago.git"
+  },
+  "author": "Samuyi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Samuyi/iago/issues"
+  },
+  "homepage": "https://github.com/Samuyi/iago#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mocha": "^6.0.2",
+    "supertest": "^4.0.0"
+  }
+}
