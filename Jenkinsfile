@@ -5,8 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'git clone https://github.com/Samuyi/iago.git'
-                dir ('iago'){ 
+                dir ('/var/jenkins_home/workspace/iago_master'){ 
                 npm install
                 }
             }
@@ -14,7 +13,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-                dir('iago') {
+                dir('/var/jenkins_home/workspace/iago_master') {
                 npm test
                 }
             }
