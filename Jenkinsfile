@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                git clone git@github.com:Samuyi/iago.git
+                git clone https://github.com/Samuyi/iago.git
                 cd iago
                 npm install
             }
