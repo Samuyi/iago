@@ -6,14 +6,17 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh 'git clone https://github.com/Samuyi/iago.git'
-                sh 'cd iago'
+                dir ('iago'){ 
                 npm install
+                }
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing..'
+                dir('iago') {
                 npm test
+                }
             }
         }
         stage('Deploy') {
